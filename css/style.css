@@ -670,6 +670,11 @@ a:focus {
 
 .layout_padding2{
   order: -1
+
+}
+.layout_padding2 img{
+  width: 100%;
+  height: 100%;
 }
 
 #P-calender{
@@ -677,8 +682,19 @@ a:focus {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  width: 60%;
 }
+#P-calender ul li {
+  text-align: left;
+  padding: 3px;
 
+}
+#P-calender ul li b{
+  color:#ff4f5a;
+}
+.img-box-2{
+  width: 40%;
+}
 #read-more :hover{
   color: #ff4f5a !important;
   background-color: #ff4f5a;
@@ -819,7 +835,11 @@ a:focus {
 .info_section{
   margin-top: 90px;
 }
+.about-1 p{
+  text-align: left;
+}
 @media (max-width: 600px) {
+  /*calender about event marketers*/
   .calender{
     flex-direction: column;
   }
@@ -839,9 +859,379 @@ a:focus {
   .service_section .service_container{
     padding: 0px !important;
   }
+  .img-box-2{
+    width: 100%;
+  }
+  #p-calender{
+    width: 90% !important;
+    margin: auto !important;
+
+  }
+  .about-us{
+    width: 90%;
+  }
+  .about-1 p{
+    text-align: center;
+  }
+  .scale-img{
+    display: none;
+  }
+  .scale-description{
+    width: 85%  !important;
+    text-align: center;
+    
+  }
   
 }
 
 .about-div{
   display: flex;
+}
+.slider_section{
+  min-height: 60vh !important;
+}
+
+.hero-updated{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+ background-position: left center;
+
+}
+
+.hero-updated .hero-div{
+  width: 65%;
+  margin-left: 5%;
+}
+.hero-updated .hero-div h1{
+  text-align: center;
+}
+.hero-updated .hero-div h2{
+  font-size: 18px;
+  text-align: center;
+}
+
+.hero-updated .hero-div-2 h1{
+  font-size: 26px;
+  margin-top: 12%;
+
+}
+.hero-updated-img{
+  width: 75%;
+  background-image: url("http://unblast.com/wp-content/uploads/2020/03/Marketing-and-Sales-Illustration-1.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left;
+  height: 100%;
+  flex-direction: row;
+
+
+}
+ 
+
+/*funnel*/
+
+.funnel{
+  margin: auto;
+  width: 80%;
+  margin-bottom: 28vh;
+  margin-top: 10vh;
+}
+.funnel h1{
+  text-align: center;
+  font-size: 28px;
+  color: #FF4F5A;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+.funnel h6{
+  text-align: left;
+  margin-bottom: 62px;
+}
+.funnel-flex{
+  width: 100%;
+  display: flex;
+}
+.funnel-flex .funnel-p{
+  width: 50%;
+  margin-right: 70px;
+}
+.funnel-img{
+  width: 50%;
+  position: relative;
+
+}
+.funnel-img img{
+  width: 100%;
+  height: 100%;
+  top: 0px;
+}
+.btn-2{
+  color: white;
+  background-color: #FF4F5A;
+  padding: 14px 30px;
+  transition: 150ms;
+  margin-top: 15px !important;
+  border-radius: 5px;
+
+}
+.btn-2:hover{
+  border:2px solid #FF4F5A;
+  color: #FF4F5A;
+  background-color: white;
+}
+
+/*contact */ 
+
+.scale{
+  width: 80%;
+  margin: auto;
+  margin-top: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.scale-img{
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  margin: 25px;
+}
+.scale-description{
+  width: 60%;
+}
+.scale-img img{
+  width: 100%;
+
+}
+
+@media (max-width: 950px){
+  .hero-updated{
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 45px;
+    height: 50vh;
+  }
+  
+  .hero-updated-img{
+    display: none;
+  }
+
+  .hero-div{
+    order: -100;
+  }
+  #P-calender{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+}
+.hero-updated .hero-div{
+  margin: 0px;
+}
+.funnel{
+  width: 92% !important;
+}
+.funnel-img{
+  width: 90%;
+ 
+}
+.funnel-flex{
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+.funnel-flex .funnel-p{
+  margin: 5px !important;
+  margin-right: 0px !important;
+  width: 90% !important;
+}
+.about-2{
+  display: none;
+}
+.scale-img{
+   width: 50%;
+}
+
+/*about event marketers*/
+
+  .calender{
+    display: flex;
+    flex-direction: column;
+  }
+  .img-box-2{
+    width: 100%;
+    margin: auto;
+  }
+  .img-box-2 img{
+    width: 100%;
+  }
+ }
+
+ @media (max-width: 1000px){
+  .scale-img{
+    width: 50%;
+ }
+ .scale-img img{
+  width: 120%;
+ }
+ #p-calender{
+  margin: auto;
+ }
+ }
+ /*hero*/
+ @media (max-width: 450px){
+  .hero-updated{
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: start;
+    margin-top: 45px;
+    min-height: 100vh !important;
+    height: auto;
+  
+  }
+ }
+
+
+
+
+ @media (max-width: 749px){
+  .scale-img{
+    display: none;
+  }
+  .scale{
+    width: 95%;
+  }
+ }
+ @media (max-width: 390px){
+  /*funnel*/
+  .funnel-img{
+    width: 100%;
+    height: 40vh;
+    margin-top: 25px;
+  }
+
+ }
+ 
+.testimonials-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  min-height: 300px; /* adjust this value to be greater than the height of the tallest testimonial */
+  height: 350px;
+}
+
+.carousel-btn{
+  border: none;
+  color: #FF4F5A;
+  font-size: 55px;
+  background-color: #fff;
+  position: absolute;
+}
+.carousel-btn:focus{
+  outline: none;
+}
+.carousel-btn:hover{
+  color: #ce2f39;
+}
+.prev{
+  left: 30px;
+}
+.next{
+  right: 30px;
+}
+.btn-responsive{
+  display: none;
+}
+.testimonial{
+  width: 60%;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.7s ease;
+  display: flex;
+  flex-direction: row-reverse ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.testimonial p{
+  width: 75%;
+  padding: 0px;
+  margin: 4px;
+}
+.testimonial-name{
+  margin: 12px;
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.testimonial-name img{
+  width: 50px;
+  border-radius: 50%;
+  height: 50px;
+}
+
+
+.active{
+  opacity: 1;
+}
+/* Small devices (phones, 576px and up) */
+@media (max-width: 576px) {
+  .testimonials-container {
+/* switch to block display to make the testimonials stack vertically */
+    position: static; /* remove absolute positioning to allow the testimonials to flow naturally */
+    text-align: center;
+    height: 400px;
+  }
+  .testimonial{
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+  .testimonial p{
+    width: 90%;
+  }
+  .testimonial-name{
+    width: 100%;
+  }
+  .testimonial-name p{
+    padding: 0px;
+    margin: 2px;
+  }
+  .carousel-btn {
+    font-size: 35px; /* reduce the font size of the buttons */
+  }
+  .prev {       
+    left: 5px; /* adjust the button positions */
+  }
+  .next {
+    right: 5px;
+  }
+  .btn-responsive{
+    display: inline-block;
+    position: relative;
+    margin: 20px;
+  }
+  .btn-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .og-btn{
+    display: none;
+  }
+}
+.layout_padding2{
+  padding: 45px 0px 0px 0px;
+}
+.about-section{
+  padding-top: 20vh !important;
 }
