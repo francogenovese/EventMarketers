@@ -1235,3 +1235,8 @@ a:focus {
 .about-section{
   padding-top: 20vh !important;
 }
+
+
+.slider_section .carousel-control-next{
+  background-image:url(../images/right-arrow-black.png)
+}
